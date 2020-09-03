@@ -9,6 +9,7 @@ private:
 	string name;//ToDo -> declarar os atributos restantes referentes ao obj. pessoa
 protected:
 	Pessoa();
-	void getCustomerData();
+	void getData();
 	void putData();
+	string getName();
 };

@@ -5,8 +5,8 @@ Pessoa::Pessoa() {
 
 }
 
-void Pessoa::getCustomerData() {
-	cout << "Digite o nome do Paciente para cadastro: \n";
+void Pessoa::getData() {
+	cout << "Digite o nome para cadastro: \n";
 	cin.ignore();
 	//getchar();
 	getline(cin, name);
@@ -14,6 +14,10 @@ void Pessoa::getCustomerData() {
 	//ToDo -> *Receber atributos restantes referentes ao objeto pessoa
 }
 
+string Pessoa::getName() {
+	return name;
+};
+
 void Pessoa::putData() {
-	cout << "\nRestaurante: " << name << "\n";
+	cout << "\nNome: " << name << "\n";
 }

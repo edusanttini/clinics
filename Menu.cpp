@@ -20,14 +20,14 @@ void Menu::test() {
 }
 
 bool Menu::isInputIncorrect() {
-    if ((option == 1) || (option == 2) || (option == 3) || 
-        (option == 4) || (option == 5) || (option == 0))
-        return false;
-    else
+    if ((option == '1') || (option == '2') || (option == '3') ||
+        (option == '4') || (option == '5') || (option == '!'))
         return true;
+    else
+        return false;
 }
 
-int Menu::getOption() {
+char Menu::getOption() {
     return option;
 }
 
@@ -35,8 +35,10 @@ void Menu::printMenu() {
 	cout << "------------------------ Clinics XX96 ------------------------\n";
 	/*ToDo -> interface com o user
 					
-				e.g. "Tecle A para agendar uma consulta"
-					 Tecle B para ..
+				e.g. "Tecle 1 para fazer o cadastro
+                      Tecle 2 para agendar uma consulta
+                      
+					  Tecle 3 para ..
 					 .
 					 .
 					 .
@@ -51,34 +53,35 @@ void Menu::printMenu() {
 
 void Menu::executeMenu() {
     switch (option) {
-    case 1:
-        paciente.getData();
-        paciente.putData();
+    case '1':
+        pacient.makeUserRegistration();
+        pacient.printUserData();
         break;
 
-    case 2:
-        cout << "number22222";
+    case '2':
+        pacient.makeAnAppointment();
         break;
 
-    case 3:
+    case '3':
         cout << "number3333";
-        //Menu::test();
+        doc.getDoctorData();
+        doc.printDoctorData();
         break;
 
-    case 4 :
+    case '4' :
         cout << "number4444";
         break;
 
-    case 5 :
+    case '5' :
         cout << "number5555";
         break;
 
-    case 0 :
+    case '!' :
         printf("EXITING PROGRAM.............\n");
         break;
 
     default:
-        printf("Digite um valor Valido!!!!!!!!!!!!!\n");
+        printf("Unreachable!!!!!!!!!!!!!\n");
         break;
     }
 }

@@ -7,6 +7,7 @@ private:
 public:
     Paciente();
     Paciente(string);
-    void getData();
-    void putData();
+    void makeUserRegistration();
+    void printUserData();
+    void makeAnAppointment();
 };
