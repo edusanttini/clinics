@@ -10,10 +10,6 @@
 
 */
 
-Menu::Menu() {
-    //this->option = option;
-}
-
 void Menu::test() {
     
     cout << "not okay";
@@ -37,7 +33,7 @@ void Menu::printMenu() {
 					
 				e.g. "Tecle 1 para fazer o cadastro
                       Tecle 2 para agendar uma consulta
-                      
+                      Tecle 3 para gerar um boleto para pagamento
 					  Tecle 3 para ..
 					 .
 					 .
@@ -49,6 +45,7 @@ void Menu::printMenu() {
 	*/
     cin >> option;
     // getline(cin, option);
+    cout << "------------------------ Clinics XX96 ------------------------\n";
 }
 
 void Menu::executeMenu() {
@@ -63,12 +60,13 @@ void Menu::executeMenu() {
         break;
 
     case '3':
-        cout << "number3333";
-        doc.getDoctorData();
-        doc.printDoctorData();
+        boleto.createBoleto();
         break;
 
     case '4' :
+        //these are only for test purpose
+        doc.getDoctorData();
+        doc.printDoctorData();
         cout << "number4444";
         break;
 
