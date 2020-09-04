@@ -5,11 +5,12 @@
 using namespace std;
 
 class Pessoa {
-private:
+public:
 	string name;//ToDo -> declarar os atributos restantes referentes ao obj. pessoa
-protected:
+public:
 	Pessoa();
 	void getData();
 	void putData();
 	string getName();
+	virtual void vTest();
 };

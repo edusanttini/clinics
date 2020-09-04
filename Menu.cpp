@@ -76,6 +76,11 @@ void Menu::executeMenu() {
 
     case '5' :
         cout << "number5555";
+        //exemple of how to overRide a superClass method for a derivedClass method(funcao virtiual)
+        //ToDo -> encontrar um caso valido para sobrescrita de metodo!!
+        //a funcao virtual no caso eh a vTest();
+        p = &pacient;
+        p->vTest();
         break;
 
     case '!' :

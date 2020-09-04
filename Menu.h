@@ -16,6 +16,7 @@ public:
 	Paciente pacient;//ToDo -> declarar os atributos restantes referentes ao obj. menu
 	Doutor doc;
 	Boleto boleto;
+	Pessoa *p;
 public:
 	void printMenu();
 	void executeMenu();

@@ -1,7 +1,7 @@
 #pragma once
 #include "Pessoa.h"
 class Paciente :
-    private Pessoa {
+    public Pessoa {
 private:
     string injuryType;//ToDo -> Declarar os atributos restantes referentes ao obj. paciente
 public:
@@ -10,4 +10,5 @@ public:
     void makeUserRegistration();
     void printUserData();
     void makeAnAppointment();
+    void vTest();
 };

@@ -16,6 +16,10 @@ void Pessoa::getData() {
 
 string Pessoa::getName() {
 	return name;
+}
+
+void Pessoa::vTest(){
+	cout << "---------OVERrIDE NOToKAY--------";
 };
 
 void Pessoa::putData() {

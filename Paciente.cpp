@@ -30,3 +30,7 @@ void Paciente::makeAnAppointment() {
 	system("pause");
 
 }
+
+void Paciente::vTest(){
+	cout << "\toverRide okay!!!!\n";
+}
