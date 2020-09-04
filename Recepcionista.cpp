@@ -10,7 +10,7 @@ Recepcionista::Recepcionista(string workId) {
 }
 
 void Recepcionista::setWorkerId(){
-
+	//FYI: id esta sendo setado no construtor
 }
 
 string Recepcionista::getWorkerId(){
