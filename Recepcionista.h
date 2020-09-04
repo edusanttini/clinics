@@ -9,6 +9,7 @@ class Recepcionista :
 private:
 	string workerId;
 public:
+	Recepcionista();
 	Recepcionista(string workerId);
 	void setWorkerId();
 	string getWorkerId();

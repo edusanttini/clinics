@@ -10,6 +10,10 @@
 
 */
 
+Menu::Menu() {
+
+}
+
 void Menu::test() {
     
     cout << "not okay";

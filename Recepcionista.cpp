@@ -1,6 +1,10 @@
 #include "Recepcionista.h"
 using namespace std;
 
+Recepcionista::Recepcionista() {
+	
+}
+
 Recepcionista::Recepcionista(string workId) {
 	this->workerId = workId;
 }

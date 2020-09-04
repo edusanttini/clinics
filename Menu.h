@@ -10,7 +10,8 @@
 using namespace std;
 
 class Menu{
-private:
+public:
+	Menu();
 	char option;
 	Paciente pacient;//ToDo -> declarar os atributos restantes referentes ao obj. menu
 	Doutor doc;
