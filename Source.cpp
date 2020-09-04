@@ -11,7 +11,7 @@ int main() {
 	do {
 		do {
 			menuController.printMenu();
-		} while (!menuController.isInputIncorrect());
+		} while (!menuController.isInputCorrect());
 		menuController.executeMenu();
 	} while (menuController.getOption() != '!');
 

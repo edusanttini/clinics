@@ -19,7 +19,7 @@ public:
 public:
 	void printMenu();
 	void executeMenu();
-	bool isInputIncorrect();
+	bool isInputCorrect();
 	char getOption();
 	void test();
 };

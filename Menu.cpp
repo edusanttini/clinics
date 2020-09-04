@@ -19,7 +19,7 @@ void Menu::test() {
     cout << "not okay";
 }
 
-bool Menu::isInputIncorrect() {
+bool Menu::isInputCorrect() {
     if ((option == '1') || (option == '2') || (option == '3') ||
         (option == '4') || (option == '5') || (option == '!'))
         return true;
