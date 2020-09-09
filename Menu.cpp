@@ -38,7 +38,7 @@ void Menu::printMenu() {
 				e.g. "Tecle 1 para fazer o cadastro
                       Tecle 2 para agendar uma consulta
                       Tecle 3 para gerar um boleto para pagamento
-					  Tecle 3 para ser feliz muito feliz
+					  Tecle 3 para ser feliz
 					 .
 					 .
 					 .
