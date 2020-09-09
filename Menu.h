@@ -5,6 +5,7 @@
 #include "Paciente.h"
 #include "Doutor.h"
 #include "Boleto.h"
+#include "Appointment.h"
 
 
 using namespace std;
@@ -16,6 +17,7 @@ public:
 	Paciente pacient;//ToDo -> declarar os atributos restantes referentes ao obj. menu
 	Doutor doc;
 	Boleto boleto;
+	Appointment appointment;
 	Pessoa *p;
 public:
 	void printMenu();
@@ -23,4 +25,7 @@ public:
 	bool isInputCorrect();
 	char getOption();
 	void test();
+
 };
+
+void logo();

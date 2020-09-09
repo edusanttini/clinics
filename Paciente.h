@@ -1,9 +1,11 @@
 #pragma once
 #include "Pessoa.h"
-class Paciente :
-    public Pessoa {
+class Paciente : public Pessoa {
+
 private:
-    string injuryType;//ToDo -> Declarar os atributos restantes referentes ao obj. paciente
+    string injuryType;
+    string cpf;
+
 public:
     Paciente();
     Paciente(string);

@@ -6,12 +6,22 @@ Pessoa::Pessoa() {
 }
 
 void Pessoa::getData() {
+    fflush(stdin);
 	cout << "Digite o nome para cadastro: \n";
-	cin.ignore();
-	//getchar();
 	getline(cin, name);
-	
-	//ToDo -> *Receber atributos restantes referentes ao objeto pessoa
+	cout << "Digite o endereco:" << endl;
+    getline(cin, adress);
+    cout << "Digite a cidade:" << endl;
+    getline(cin, city);
+    cout << "Digite o estado:" << endl;
+    getline(cin, state);
+    cout << "Digite o CEP:" << endl;
+    getline(cin, CEP);
+    cout << "Digite o telefone:" << endl;
+    getline(cin, phone);
+
+
+
 }
 
 string Pessoa::getName() {
@@ -23,5 +33,11 @@ void Pessoa::vTest(){
 };
 
 void Pessoa::putData() {
-	cout << "\nNome: " << name << "\n";
+	cout << "\nNome: " << name << endl;
+	cout << "Endereco: " << adress << endl;
+    cout << "Cidade: " << city << endl;
+    cout << "Estado: " << state << endl;
+    cout << "CEP: " << CEP << endl;
+    cout << "Telefone: " << phone << endl;
+
 }

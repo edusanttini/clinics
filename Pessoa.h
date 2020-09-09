@@ -6,7 +6,12 @@ using namespace std;
 
 class Pessoa {
 public:
-	string name;//ToDo -> declarar os atributos restantes referentes ao obj. pessoa
+	string name;
+	string adress;
+    string city;
+    string state;
+    string CEP;
+    string phone;
 public:
 	Pessoa();
 	void getData();

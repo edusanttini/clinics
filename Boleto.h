@@ -1,8 +1,8 @@
 #include "Recepcionista.h"
 using namespace std;
 
-class Boleto :
-	private Recepcionista{
+class Boleto : private Recepcionista{
+
 public:
 	Boleto();
 	string boletoId;

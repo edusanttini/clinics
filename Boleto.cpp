@@ -10,3 +10,4 @@ void Boleto::createBoleto() {
 	/*ToDo -> Create boleto user interface*/
 	cout << "WKID__ " << recepcionist.getWorkerId() << "\n";
 }
+
