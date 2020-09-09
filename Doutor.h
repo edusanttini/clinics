@@ -3,7 +3,7 @@
 class Doutor :
     private Pessoa{
 private:
-    string crm;
+    string crm, specialty;
 public:
     Doutor();
     void getDoctorData();

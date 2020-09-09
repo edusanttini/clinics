@@ -58,14 +58,14 @@ void Menu::executeMenu() {
         doc.getDoctorData();
         doc.printDoctorData();
         cout << "Dados cadastrados com sucesso! Pressione qualquer tecla para retornar ao menu inicial..." << endl;
-        getchar();
+        cin.ignore();
         break;
 
     case '2':
         pacient.makeUserRegistration();
         pacient.printUserData();
         cout << "Dados cadastrados com sucesso! Pressione qualquer tecla para retornar ao menu inicial..." << endl;
-        getchar();
+        cin.ignore();
         break;
 
 
@@ -74,7 +74,7 @@ void Menu::executeMenu() {
         appointment.makeAnAppointment();
         appointment.printAppointment();
         cout << "Dados cadastrados com sucesso! Pressione qualquer tecla para retornar ao menu inicial..." << endl;
-        getchar();
+        cin.ignore();
         break;
 
     case '4':
@@ -120,7 +120,7 @@ system("color 1F");
 
 	    cout << "\nPressione qualquer tecla para continuar..." << endl;
 
-	    getch();
+        cin.ignore();
 
 	    system("CLS");
 

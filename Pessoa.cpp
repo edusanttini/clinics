@@ -6,8 +6,9 @@ Pessoa::Pessoa() {
 }
 
 void Pessoa::getData() {
+    cin.ignore();
+    cout << "Digite o nome para cadastro: \n";
     fflush(stdin);
-	cout << "Digite o nome para cadastro: \n";
 	getline(cin, name);
 	cout << "Digite o endereco:" << endl;
     getline(cin, adress);
