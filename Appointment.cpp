@@ -11,7 +11,6 @@ void Appointment::makeAnAppointment() {
 	getline (cin, date);
 	cout << "Digite o horario hh:mm para agendar a consulta: \n";
 	getline (cin, clock);
-
 }
 
 void Appointment::printAppointment() {
@@ -19,6 +18,4 @@ void Appointment::printAppointment() {
     Paciente::printUserData();
     cout << "Data: " << date << endl;
     cout << "Horario: " << clock << endl;
-
 }
-

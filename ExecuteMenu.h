@@ -1,8 +1,7 @@
 #pragma once
 #include "Menu.h"
 class ExecuteMenu :
-    public Menu
-{
+    public Menu{
 private:
     char option;
 public:

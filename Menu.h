@@ -23,9 +23,10 @@ public:
 	void printMenu();
 	void executeMenu();
 	bool isInputCorrect();
-	char getOption();
+	char getOption();	
 	void test();
-
+	void printSuccessMessage();
 };
 
 void logo();
+

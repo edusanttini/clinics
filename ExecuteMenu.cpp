@@ -8,21 +8,21 @@ void ExecuteMenu::executeMenu() {
         //these are only for test purpose
         doc.getDoctorData();
         doc.printDoctorData();
-        cout << "Dados cadastrados com sucesso! Pressione qualquer tecla para retornar ao menu inicial..." << endl;
+        printSuccessMessage();
         cin.ignore();
         break;
 
     case '2':
         pacient.makeUserRegistration();
         pacient.printUserData();
-        cout << "Dados cadastrados com sucesso! Pressione qualquer tecla para retornar ao menu inicial..." << endl;
+        printSuccessMessage();
         cin.ignore();
         break;
 
     case '3':
         appointment.makeAnAppointment();
         appointment.printAppointment();
-        cout << "Dados cadastrados com sucesso! Pressione qualquer tecla para retornar ao menu inicial..." << endl;
+        printSuccessMessage();
         cin.ignore();
         break;
 
@@ -31,7 +31,6 @@ void ExecuteMenu::executeMenu() {
         break;
 
     case '5':
-        cout << "number5555";
         //exemple of how to overRide a superClass method for a derivedClass method(funcao virtiual)
         //ToDo -> encontrar um caso valido para sobrescrita de metodo!!
         //a funcao virtual no caso eh a vTest();

@@ -20,9 +20,6 @@ void Pessoa::getData() {
     getline(cin, CEP);
     cout << "Digite o telefone:" << endl;
     getline(cin, phone);
-
-
-
 }
 
 string Pessoa::getName() {
@@ -40,5 +37,4 @@ void Pessoa::putData() {
     cout << "Estado: " << state << endl;
     cout << "CEP: " << CEP << endl;
     cout << "Telefone: " << phone << endl;
-
 }

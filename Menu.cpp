@@ -7,7 +7,6 @@ Menu::Menu() {
 }
 
 void Menu::test() {
-
     cout << "not okay";
 }
 
@@ -15,11 +14,9 @@ bool Menu::isInputCorrect() {
     if ((option == '1') || (option == '2') || (option == '3') ||
         (option == '4') || (option == '5') || (option == '!'))
         return true;
-
     else
         system("CLS");
-    return false;
-
+        return false;
 }
 
 char Menu::getOption() {
@@ -41,26 +38,23 @@ void Menu::printMenu() {
 }
 
 void logo() {
-
     system("color 1F");
-
     cout << "\n------------------------------->>>>>  ///    BEM-VINDA AO DOCSYSTEM   ///   <<<<<------------------------------------\n\n\n"
-
-
-        << "\n   %%%%%%%      %%%%%%%%%   %%%%%%%%%    %%%%%%%%    %%    %%    %%%%%%%%   %%%%%%%%%%  %%%%%%%%%   %%%%%%%%%%%"
-        << "\n   %%     %%    %%     %%   %%           %%          %%    %%    %%             %%      %%          %%   %%  %%"
-        << "\n   %%      %%   %%     %%   %%           %%          %%    %%    %%             %%      %%          %%   %%  %%"
-        << "\n   %%      %%   %%     %%   %%           %%%%%%%%    %%%%%%%%    %%%%%%%%       %%      %%%%%%%%%   %%   %%  %%"
-        << "\n   %%      %%   %%     %%   %%                 %%          %%          %%       %%      %%          %%   %%  %%"
-        << "\n   %%     %%    %%     %%   %%                 %%          %%          %%       %%      %%          %%   %%  %%"
-        << "\n   %%%%%%%      %%%%%%%%%   %%%%%%%%%    %%%%%%%%    %%%%%%%%    %%%%%%%%       %%      %%%%%%%%%   %%   %%  %%"
-        << endl;
-
+         << "\n   %%%%%%%      %%%%%%%%%   %%%%%%%%%    %%%%%%%%    %%    %%    %%%%%%%%   %%%%%%%%%%  %%%%%%%%%   %%%%%%%%%%%"
+         << "\n   %%     %%    %%     %%   %%           %%          %%    %%    %%             %%      %%          %%   %%  %%"
+         << "\n   %%      %%   %%     %%   %%           %%          %%    %%    %%             %%      %%          %%   %%  %%"
+         << "\n   %%      %%   %%     %%   %%           %%%%%%%%    %%%%%%%%    %%%%%%%%       %%      %%%%%%%%%   %%   %%  %%"
+         << "\n   %%      %%   %%     %%   %%                 %%          %%          %%       %%      %%          %%   %%  %%"
+         << "\n   %%     %%    %%     %%   %%                 %%          %%          %%       %%      %%          %%   %%  %%"
+         << "\n   %%%%%%%      %%%%%%%%%   %%%%%%%%%    %%%%%%%%    %%%%%%%%    %%%%%%%%       %%      %%%%%%%%%   %%   %%  %%"
+         << endl;
     cout << "\n Criado por: \n Angelica \n Carol \n Dhessica \n Eduardo \n Rafael " << endl;
-
     cout << "\nPressione qualquer tecla para continuar..." << endl;
-
     cin.ignore();
-
     system("CLS");
+}
+
+void Menu::printSuccessMessage() {
+    cout << "Dados cadastrados com sucesso!" << endl;
+    cout << "Pressione qualquer tecla para retornar ao menu inicial..." << endl;
 }
