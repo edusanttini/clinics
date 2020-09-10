@@ -6,5 +6,5 @@ class ExecuteMenu :
 private:
     char option;
 public:
-    void executeMenu(char op);
+    void executeMenu();
 };

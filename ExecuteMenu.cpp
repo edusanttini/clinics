@@ -1,10 +1,8 @@
 #include "ExecuteMenu.h"
 
-void ExecuteMenu::executeMenu(char op) {
-    option = op;
-
+void ExecuteMenu::executeMenu() {
     system("CLS");
-    switch (option) {
+    switch (Menu::option) {
 
     case '1':
         //these are only for test purpose
