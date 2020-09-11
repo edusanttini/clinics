@@ -25,16 +25,15 @@ char Menu::getOption() {
 
 void Menu::printMenu() {
     system("CLS");
-    cout << "------------------------ DOCSYSTEM top ------------------------\n"
+    cout << "------------------------ DOCSYSTEM ------------------------\n"
         "Tecle 1 para fazer o cadastro de medico\n"
         "Tecle 2 para fazer o cadastro de paciente\n"
         "Tecle 3 para agendar uma consulta\n"
         "Tecle 4 para gerar um boleto para pagamento\n"
         "Tecle ! para sair\n";
-
+    cout << "------------------------ DOCSYSTEM ------------------------\n";
     cin >> option;
-    // getline(cin, option);
-    cout << "------------------------ DOCSYSTEM down ------------------------\n";
+
 }
 
 void logo() {
