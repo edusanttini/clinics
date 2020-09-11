@@ -1,7 +1,7 @@
 #pragma once
 #include "Pessoa.h"
 class Doutor :
-    protected Pessoa{
+    public Pessoa{
 private:
     string crm, specialty;
 public:
@@ -9,4 +9,6 @@ public:
     void getDoctorData();
     void printDoctorData();
     string getCrm();
+    void vTest();
 };
+

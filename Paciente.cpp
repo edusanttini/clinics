@@ -9,7 +9,7 @@ Paciente::Paciente(string injury) {
 }
 
 void Paciente::makeUserRegistration() {
-	cout << "\n\t\t----- Seja bem vindo, paciente -----\n";
+	cout << "----- Digite os dados do paciente -----\n";
 	Pessoa::getData();
 	cout << "Digite o CPF:" << endl;
     getline(cin, cpf);
@@ -28,15 +28,16 @@ void Paciente::printUserData() {
 
 }
 
-void Paciente::makeAnAppointment() {
-	system("cls");
-	//Pessoa::getName();
-	cout << "\n\t\t----- Bem vindo ao sistema de agendamento -----\n\n";
-	cout << "Especialidades da Clinics: \n";
-	system("pause");
-
-}
-
 void Paciente::vTest(){
-	cout << "\toverRide okay!!!!\n";
+    cout << "----------------------------------------" << endl;
+    cout << "Dados do Paciente:";
+	cout << "\nNome: " << name << endl;
+	cout << "Endereco: " << adress << endl;
+    cout << "Cidade: " << city << endl;
+    cout << "Estado: " << state << endl;
+    cout << "CEP: " << CEP << endl;
+    cout << "Telefone: " << phone << endl;
+	cout << "CPF:" << cpf << endl;
+	cout << "Sintoma relatado: " << injuryType << endl << endl;
+
 }

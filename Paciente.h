@@ -1,6 +1,6 @@
 #pragma once
 #include "Pessoa.h"
-class Paciente : protected Pessoa {
+class Paciente : public Pessoa {
 
 private:
     string injuryType;
@@ -11,6 +11,5 @@ public:
     Paciente(string);
     void makeUserRegistration();
     void printUserData();
-    void makeAnAppointment();
     void vTest();
 };

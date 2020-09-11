@@ -1,41 +1,50 @@
 #include "ExecuteMenu.h"
 
 void ExecuteMenu::executeMenu() {
+
     system("CLS");
+
     switch (Menu::option) {
 
     case '1':
-        //these are only for test purpose
-        appointment.getDoctorData();
-        appointment.printDoctorData();
+        system("color 2F");
+        D.getDoctorData();
+        P[0] = &D;
+        P[0] -> vTest();
         printSuccessMessage();
         cin.ignore();
         break;
 
     case '2':
-        appointment.makeUserRegistration();
-        appointment.printUserData();
+        system("color 3F");
+        E.makeUserRegistration();
+        P[1] = &E;
+        P[1] -> vTest();
         printSuccessMessage();
         cin.ignore();
         break;
 
     case '3':
+        system("color 8F");
         appointment.makeAnAppointment();
-        appointment.printAppointment();        
-        system("PAUSE");
+        appointment.printAppointment();
+        P[0] -> vTest();
+        P[1] -> vTest();
+        printSuccessMessage();
+        cin.ignore();
         break;
 
     case '4':
-        boleto.createBoleto();
-        system("PAUSE");
-        break;
-
-    case '5':
-        //exemple of how to overRide a superClass method for a derivedClass method(funcao virtiual)
-        //ToDo -> encontrar um caso valido para sobrescrita de metodo!!
-        //a funcao virtual no caso eh a vTest();
-        //p = &pacient;
-        //p->vTest();
+        system("color 1F");
+        A.getconsulta();
+        B.getdata();
+        A.putdata();
+        C = A + B;
+        C = A - B;
+        C = A/B;
+        printSuccessMessage();
+        fflush(stdin);
+        cin.ignore();
         break;
 
     case '!':

@@ -5,7 +5,7 @@ Doutor::Doutor() {
     }
 
 void Doutor::getDoctorData() {
-	cout << "\n\t\t----- Seja bem vindo, doutor -----\n";
+	cout << "----- Digite os dados do Medico -----\n";
 	Pessoa::getData();
 	cout << "Digite o crm: \n";
 	getline(cin, crm);
@@ -27,4 +27,18 @@ void Doutor::printDoctorData() {
 string Doutor::getCrm() {
 
     return crm;
+}
+
+void Doutor::vTest(){
+    cout << "----------------------------------------" << endl;
+    cout << "Dados do Medico:";
+	cout << "\nNome: " << name << endl;
+	cout << "Endereco: " << adress << endl;
+    cout << "Cidade: " << city << endl;
+    cout << "Estado: " << state << endl;
+    cout << "CEP: " << CEP << endl;
+    cout << "Telefone: " << phone << endl;
+	cout << "Crm: " << crm << "\n";
+	cout << "Especialidade:" << specialty << endl << endl;
+
 }

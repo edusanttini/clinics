@@ -7,13 +7,17 @@
 
 
 class Appointment : public Doutor, public Paciente {
-private:
+
+    private:
     string date;
     string clock;
 
-public:
+    public:
+
     void makeAnAppointment();
     void printAppointment();
+
+
 };
 
 

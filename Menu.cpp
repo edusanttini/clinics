@@ -12,9 +12,10 @@ void Menu::test() {
 
 bool Menu::isInputCorrect() {
     if ((option == '1') || (option == '2') || (option == '3') ||
-        (option == '4') || (option == '5') || (option == '!'))
+        (option == '4') || (option == '!'))
         return true;
     else
+        system("CLS");
         return false;
 }
 
@@ -23,6 +24,7 @@ char Menu::getOption() {
 }
 
 void Menu::printMenu() {
+    system("color 0F");
     system("CLS");
     cout << "------------------------ DOCSYSTEM ------------------------\n"
         "Tecle 1 para fazer o cadastro de medico\n"
@@ -36,7 +38,7 @@ void Menu::printMenu() {
 }
 
 void logo() {
-    system("color 1F");
+
     cout << "\n------------------------------->>>>>  ///    BEM-VINDA AO DOCSYSTEM   ///   <<<<<------------------------------------\n\n\n"
          << "\n   %%%%%%%      %%%%%%%%%   %%%%%%%%%    %%%%%%%%    %%    %%    %%%%%%%%   %%%%%%%%%%  %%%%%%%%%   %%%%%%%%%%%"
          << "\n   %%     %%    %%     %%   %%           %%          %%    %%    %%             %%      %%          %%   %%  %%"
@@ -45,8 +47,8 @@ void logo() {
          << "\n   %%      %%   %%     %%   %%                 %%          %%          %%       %%      %%          %%   %%  %%"
          << "\n   %%     %%    %%     %%   %%                 %%          %%          %%       %%      %%          %%   %%  %%"
          << "\n   %%%%%%%      %%%%%%%%%   %%%%%%%%%    %%%%%%%%    %%%%%%%%    %%%%%%%%       %%      %%%%%%%%%   %%   %%  %%"
-         << endl;
-    cout << "\n Criado por: \n Angelica \n Carol \n Dhessica \n Eduardo \n Rafael " << endl;
+         << endl << endl;
+
     cout << "\nPressione qualquer tecla para continuar..." << endl;
     cin.ignore();
     system("CLS");

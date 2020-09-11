@@ -27,7 +27,7 @@ string Pessoa::getName() {
 }
 
 void Pessoa::vTest(){
-	cout << "---------OVERrIDE NOToKAY--------";
+	//cout << "---------OVERrIDE NOToKAY--------";
 };
 
 void Pessoa::putData() {

@@ -1,13 +1,33 @@
-#pragma once
-#include "Recepcionista.h"
+#include <iostream>
+
 using namespace std;
 
-class Boleto : private Recepcionista{
+class Boleto {
 
-public:
-	Boleto();
-	string boletoId;
-	Recepcionista recepcionist = Recepcionista("---- 010101 ----");
-public:
-	void createBoleto();
+	private:
+
+    float valortotal;
+	float consulta;
+	float exame;
+	float desconto;
+	int parcela;
+
+
+	public:
+
+		Boleto();
+		void getconsulta();
+		void getdata();
+		void putdata();
+
+
+		Boleto operator + (Boleto X);
+		Boleto operator - (Boleto X);
+		Boleto operator / (Boleto X);
+
+
+
+
+
+
 };

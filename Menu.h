@@ -12,9 +12,12 @@ class Menu{
 public:
 	Menu();
 	char option;
-	Boleto boleto;
+	Boleto A, B, C;
 	Appointment appointment;
-	Pessoa *p;
+	Pessoa *P[3];
+	Doutor D;
+	Paciente E;
+
 public:
 	void printMenu();
 	void executeMenu();
