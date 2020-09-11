@@ -6,15 +6,15 @@ void ExecuteMenu::executeMenu() {
 
     case '1':
         //these are only for test purpose
-        doc.getDoctorData();
-        doc.printDoctorData();
+        appointment.getDoctorData();
+        appointment.printDoctorData();
         printSuccessMessage();
         cin.ignore();
         break;
 
     case '2':
-        pacient.makeUserRegistration();
-        pacient.printUserData();
+        appointment.makeUserRegistration();
+        appointment.printUserData();
         printSuccessMessage();
         cin.ignore();
         break;
@@ -34,8 +34,8 @@ void ExecuteMenu::executeMenu() {
         //exemple of how to overRide a superClass method for a derivedClass method(funcao virtiual)
         //ToDo -> encontrar um caso valido para sobrescrita de metodo!!
         //a funcao virtual no caso eh a vTest();
-        p = &pacient;
-        p->vTest();
+        //p = &pacient;
+        //p->vTest();
         break;
 
     case '!':
