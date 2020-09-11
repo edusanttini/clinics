@@ -4,7 +4,7 @@ Doutor::Doutor() {
 
     }
 
-void Doutor::getDoctorData() {
+void Doutor::getData() {
 	cout << "\n\t\t----- Seja bem vindo, doutor -----\n";
 	Pessoa::getData();
 	cout << "Digite o crm: \n";
@@ -14,7 +14,7 @@ void Doutor::getDoctorData() {
 	system("CLS");
 }
 
-void Doutor::printDoctorData() {
+void Doutor::putData() {
 	cout << "----------------------------------------" << endl;
     cout << "Dados do Medico:";
 	Pessoa::putData();

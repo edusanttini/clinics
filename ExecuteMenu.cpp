@@ -6,15 +6,15 @@ void ExecuteMenu::executeMenu() {
 
     case '1':
         //these are only for test purpose
-        appointment.getDoctorData();
-        appointment.printDoctorData();
+        appointment.Doutor::getData();
+        appointment.Doutor::putData();
         printSuccessMessage();
         cin.ignore();
         break;
 
     case '2':
-        appointment.makeUserRegistration();
-        appointment.printUserData();
+        appointment.Paciente::getData();
+        appointment.Paciente::putData();
         printSuccessMessage();
         cin.ignore();
         break;

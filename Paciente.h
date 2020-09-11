@@ -9,8 +9,8 @@ private:
 public:
     Paciente();
     Paciente(string);
-    void makeUserRegistration();
-    void printUserData();
+    void getData();
+    void putData();
     void makeAnAppointment();
     void vTest();
 };

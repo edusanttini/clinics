@@ -8,7 +8,7 @@ Paciente::Paciente(string injury) {
 	this->injuryType = injury;
 }
 
-void Paciente::makeUserRegistration() {
+void Paciente::getData() {
 	cout << "\n\t\t----- Seja bem vindo, paciente -----\n";
 	Pessoa::getData();
 	cout << "Digite o CPF:" << endl;
@@ -19,7 +19,7 @@ void Paciente::makeUserRegistration() {
 	//Todo -> Receber atributos restantes referentes ao obj paciente
 }
 
-void Paciente::printUserData() {
+void Paciente::putData() {
     cout << "----------------------------------------" << endl;
     cout << "Dados do Paciente:";
 	Pessoa::putData();
