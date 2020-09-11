@@ -139,16 +139,20 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Appointment.h" />
     <ClInclude Include="Boleto.h" />
     <ClInclude Include="Doutor.h" />
+    <ClInclude Include="ExecuteMenu.h" />
     <ClInclude Include="Menu.h" />
     <ClInclude Include="Paciente.h" />
     <ClInclude Include="Pessoa.h" />
     <ClInclude Include="Recepcionista.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Appointment.cpp" />
     <ClCompile Include="Boleto.cpp" />
     <ClCompile Include="Doutor.cpp" />
+    <ClCompile Include="ExecuteMenu.cpp" />
     <ClCompile Include="Menu.cpp" />
     <ClCompile Include="Paciente.cpp" />
     <ClCompile Include="Pessoa.cpp" />
