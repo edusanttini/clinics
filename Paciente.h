@@ -1,6 +1,6 @@
 #pragma once
 #include "Pessoa.h"
-class Paciente : public Pessoa {
+class Paciente : protected Pessoa {
 
 private:
     string injuryType;

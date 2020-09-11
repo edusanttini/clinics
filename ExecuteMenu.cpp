@@ -21,9 +21,8 @@ void ExecuteMenu::executeMenu() {
 
     case '3':
         appointment.makeAnAppointment();
-        appointment.printAppointment();
-        printSuccessMessage();
-        cin.ignore();
+        appointment.printAppointment();        
+        system("PAUSE");
         break;
 
     case '4':
