@@ -28,6 +28,7 @@ void ExecuteMenu::executeMenu() {
 
     case '4':
         boleto.createBoleto();
+        system("PAUSE");
         break;
 
     case '5':

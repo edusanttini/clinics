@@ -6,8 +6,7 @@ Boleto::Boleto() {
 }
 
 void Boleto::createBoleto() {
-	cout << "-------------- BoletoGenerator -------------- \n";
+	cout << "-------------- BoletoGenerator -------------- \n\n";
 	/*ToDo -> Create boleto user interface*/
-	cout << "WKID__ " << recepcionist.getWorkerId() << "\n";
+	cout << "Id Recepcionista: " << recepcionist.getWorkerId() << "\n";
 }
-

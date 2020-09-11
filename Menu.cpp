@@ -15,7 +15,6 @@ bool Menu::isInputCorrect() {
         (option == '4') || (option == '5') || (option == '!'))
         return true;
     else
-        system("CLS");
         return false;
 }
 
