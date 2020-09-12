@@ -14,14 +14,14 @@ void Doutor::getDoctorData() {
 	system("CLS");
 }
 
-void Doutor::printDoctorData() {
+/*void Doutor::printDoctorData() {
 	cout << "----------------------------------------" << endl;
     cout << "Dados do Medico:";
 	Pessoa::putData();
 	cout << "Crm: " << crm << "\n";
 	cout << "Especialidade:" << specialty << endl << endl;
 
-}
+}*/
 
 
 string Doutor::getCrm() {
@@ -29,7 +29,7 @@ string Doutor::getCrm() {
     return crm;
 }
 
-void Doutor::vTest(){
+void Doutor::vPrintData(){
     cout << "----------------------------------------" << endl;
     cout << "Dados do Medico:";
 	cout << "\nNome: " << name << endl;

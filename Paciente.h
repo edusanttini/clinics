@@ -11,5 +11,5 @@ public:
     Paciente(string);
     void makeUserRegistration();
     void printUserData();
-    void vTest();
+    void vPrintData();
 };

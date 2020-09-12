@@ -26,7 +26,7 @@ string Pessoa::getName() {
 	return name;
 }
 
-void Pessoa::vTest(){
+void Pessoa::vPrintData(){
 	//cout << "---------OVERrIDE NOToKAY--------";
 };
 

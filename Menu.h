@@ -14,9 +14,9 @@ public:
 	char option;
 	Boleto A, B, C;
 	Appointment appointment;
-	Pessoa *P[3];
-	Doutor D;
-	Paciente E;
+	Pessoa* P[3];
+	Doutor doc;
+	Paciente pacient;
 
 public:
 	void printMenu();

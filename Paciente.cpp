@@ -28,7 +28,7 @@ void Paciente::printUserData() {
 
 }
 
-void Paciente::vTest(){
+void Paciente::vPrintData(){
     cout << "----------------------------------------" << endl;
     cout << "Dados do Paciente:";
 	cout << "\nNome: " << name << endl;

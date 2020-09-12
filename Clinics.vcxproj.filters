@@ -27,9 +27,6 @@
     <ClInclude Include="Pessoa.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Recepcionista.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Boleto.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -51,9 +48,6 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Pessoa.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Recepcionista.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Source.cpp">

@@ -19,5 +19,4 @@ void Appointment::printAppointment() {
     cout << "Dados do agendamento: " << endl;
     cout << "Data: " << date << endl;
     cout << "Horario: " << clock << endl;
-
 }

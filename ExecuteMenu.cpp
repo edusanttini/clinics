@@ -8,18 +8,18 @@ void ExecuteMenu::executeMenu() {
 
     case '1':
         system("color 2F");
-        D.getDoctorData();
-        P[0] = &D;
-        P[0] -> vTest();
+        doc.getDoctorData();
+        P[0] = &doc;
+        P[0] -> vPrintData();
         printSuccessMessage();
         cin.ignore();
         break;
 
     case '2':
         system("color 3F");
-        E.makeUserRegistration();
-        P[1] = &E;
-        P[1] -> vTest();
+        pacient.makeUserRegistration();
+        P[1] = &pacient;
+        P[1] -> vPrintData();
         printSuccessMessage();
         cin.ignore();
         break;
@@ -28,8 +28,8 @@ void ExecuteMenu::executeMenu() {
         system("color 8F");
         appointment.makeAnAppointment();
         appointment.printAppointment();
-        P[0] -> vTest();
-        P[1] -> vTest();
+        P[0] -> vPrintData();
+        P[1] -> vPrintData();
         printSuccessMessage();
         cin.ignore();
         break;
