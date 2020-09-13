@@ -18,7 +18,7 @@ void Boleto:: getdata(){
     cout << "Forneca as informacoes solicitadas\n\n";
     cout << "Foram realizados exames? Se sim, digite o valor: " << endl;
     cin >> exame;
-    cout << "Foi dado desconto? Se sim, digite o valor: \n";
+    cout << "Foi dado desconto? Se sim, digite o valor em (%): \n";
 	cin >> desconto;
 	cout << "Caso deseje parcelar o boleto, escolha o numero de parcelas: " << endl;
 	cin >> parcela;
