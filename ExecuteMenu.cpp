@@ -3,47 +3,49 @@
 void ExecuteMenu::executeMenu() {
 
     system("CLS");
+    p[0] = &doc;
+    p[1] = &pacient;
 
     switch (Menu::option) {
 
     case '1':
         system("color 2F");
         doc.getDoctorData();
-        P[0] = &doc;
-        P[0] -> vPrintData();
+        p[0] -> vPrintData();
         printSuccessMessage();
-        cin.ignore();
         break;
 
     case '2':
         system("color 3F");
         pacient.makeUserRegistration();
-        P[1] = &pacient;
-        P[1] -> vPrintData();
+        pacient.getPacientPain();
+        p[1] -> vPrintData();
         printSuccessMessage();
-        cin.ignore();
         break;
 
     case '3':
-        system("color 8F");
-        appointment.makeAnAppointment();
-        appointment.printAppointment();
-        P[0] -> vPrintData();
-        P[1] -> vPrintData();
-        printSuccessMessage();
-        cin.ignore();
+        try{
+            system("color 8F");
+            appointment.makeAnAppointment();
+            appointment.printAppointment();
+            p[0]->vPrintData();
+            p[1]->vPrintData();
+            printSuccessMessage();
+        }
+        catch (const std::exception&){
+            throw new exception("Fail: ExecuteMenu::executeMenu()");
+        }        
         break;
 
     case '4':
-        system("color 1F");
-        A.getconsulta();
-        B.getdata();
-        A.putdata();
-        C = A + B;
-        C = A - B;
-        C = A/B;
+        system("color 8F");
+        boleto.getdata();        
+        setPriceDueToConsult();
+        boleto = consulta + boleto;
+        boleto = consulta - boleto;
+        boleto = consulta / boleto;
+        boleto.putdata(boleto);
         printSuccessMessage();
-        fflush(stdin);
         cin.ignore();
         break;
 

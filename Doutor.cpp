@@ -14,16 +14,6 @@ void Doutor::getDoctorData() {
 	system("CLS");
 }
 
-/*void Doutor::printDoctorData() {
-	cout << "----------------------------------------" << endl;
-    cout << "Dados do Medico:";
-	Pessoa::putData();
-	cout << "Crm: " << crm << "\n";
-	cout << "Especialidade:" << specialty << endl << endl;
-
-}*/
-
-
 string Doutor::getCrm() {
 
     return crm;
@@ -32,13 +22,7 @@ string Doutor::getCrm() {
 void Doutor::vPrintData(){
     cout << "----------------------------------------" << endl;
     cout << "Dados do Medico:";
-	cout << "\nNome: " << name << endl;
-	cout << "Endereco: " << adress << endl;
-    cout << "Cidade: " << city << endl;
-    cout << "Estado: " << state << endl;
-    cout << "CEP: " << CEP << endl;
-    cout << "Telefone: " << phone << endl;
+	Pessoa::putData();
 	cout << "Crm: " << crm << "\n";
 	cout << "Especialidade:" << specialty << endl << endl;
-
 }

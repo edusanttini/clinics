@@ -57,4 +57,20 @@ void logo() {
 void Menu::printSuccessMessage() {
     cout << "Dados cadastrados com sucesso!" << endl;
     cout << "Pressione qualquer tecla para retornar ao menu inicial..." << endl;
+    cin.ignore();
+}
+
+int Menu::getSpecialty() {
+    return pacient.getDesiredSpecialty();
+}
+
+void Menu::setPriceDueToConsult() {
+    switch (getSpecialty()){
+    case '1': boleto.setPrice(150); break;
+    case '2': boleto.setPrice(100); break;
+    case '3': boleto.setPrice(200); break;
+    case '4': boleto.setPrice(300); break;
+    default : cout << "\nFavor digitar"
+            " um numero valido!\n"; break;
+    }
 }

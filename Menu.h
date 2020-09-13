@@ -12,9 +12,9 @@ class Menu{
 public:
 	Menu();
 	char option;
-	Boleto A, B, C;
+	Boleto boleto, consulta;
 	Appointment appointment;
-	Pessoa* P[3];
+	Pessoa* p[2];
 	Doutor doc;
 	Paciente pacient;
 
@@ -25,6 +25,8 @@ public:
 	char getOption();
 	void test();
 	void printSuccessMessage();
+	int getSpecialty();
+	void setPriceDueToConsult();
 };
 
 void logo();
