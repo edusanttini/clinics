@@ -15,15 +15,6 @@ void Paciente::makeUserRegistration() {
     getline(cin, cpf);
 }
 
-/*void Paciente::printUserData() {
-    cout << "----------------------------------------" << endl;
-    cout << "Dados do Paciente:";
-	Pessoa::putData();
-	cout << "CPF:" << cpf << endl;
-	cout << "Sintoma relatado: " << injuryType << endl << endl;
-
-}*/
-
 void Paciente::vPrintData(){
     cout << "----------------------------------------" << endl;
     cout << "Dados do Paciente:";

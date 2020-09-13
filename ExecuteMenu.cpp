@@ -9,32 +9,36 @@ void ExecuteMenu::executeMenu() {
     switch (Menu::option) {
 
     case '1':
-        system("color 2F");
-        doc.getDoctorData();
-        p[0] -> vPrintData();
-        printSuccessMessage();
+        try{
+            system("color 2F");
+            doc.getDoctorData();
+            p[0]->vPrintData();
+            printSuccessMessage();
+        }
+        catch (const std::exception&){
+            throw new exception("Fail: ExecuteMenu::executeMenu('1')");
+        }        
         break;
 
     case '2':
-        system("color 3F");
-        pacient.makeUserRegistration();
-        pacient.getPacientPain();
-        p[1] -> vPrintData();
-        printSuccessMessage();
-        break;
-
-    case '3':
         try{
-            system("color 8F");
-            appointment.makeAnAppointment();
-            appointment.printAppointment();
-            p[0]->vPrintData();
+            system("color 3F");
+            pacient.makeUserRegistration();
+            pacient.getPacientPain();
             p[1]->vPrintData();
             printSuccessMessage();
         }
         catch (const std::exception&){
-            throw new exception("Fail: ExecuteMenu::executeMenu()");
+            throw new exception("Fail: ExecuteMenu::executeMenu('2')");
         }        
+        break;
+
+    case '3':
+        
+        system("color 8F");
+        appointment.makeAnAppointment();
+        appointment.printAppointment();
+        printSuccessMessage();        
         break;
 
     case '4':
