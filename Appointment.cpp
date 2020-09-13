@@ -14,9 +14,14 @@ void Appointment::makeAnAppointment() {
 	system("cls");
 }
 
-void Appointment::printAppointment() {
-    cout << "----------------------------------------" << endl;
-    cout << "Dados do agendamento: " << endl;
-    cout << "Data: " << date << endl;
-    cout << "Horario: " << clock << endl;
+void Appointment::printHeaderAppointment() {
+	cout << "----------------------------------------" << endl;
+	cout << "\tDados do agendamento: " << endl;
+}
+void Appointment::printAppointment() {	
+	cout << "----------------------------------------\n\n" << endl;
+	cout << "Sua consulta esta marcada para o dia " << date;
+	cout << " as " << clock << "\n\n";
+	cout << "Clinics agradece pela sua escolha!";
+	cout << "\n\n----------------------------------------\n";
 }
