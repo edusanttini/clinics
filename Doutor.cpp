@@ -9,8 +9,8 @@ void Doutor::getDoctorData() {
 	Pessoa::getData();
 	cout << "Digite o crm: \n";
 	getline(cin, crm);
-	cout << "Digite a especialidade: \n";
-	getline(cin, specialty);
+	/*cout << "Digite a especialidade: \n";
+	getline(cin, specialty);*/
 	system("CLS");
 }
 
@@ -24,5 +24,5 @@ void Doutor::vPrintData(int isFullData){
     cout << "Dados do Medico:";
 	isFullData == 0 ? Pessoa::putData() : Pessoa::putName();
 	cout << "Crm: " << crm << "\n";
-	cout << "Especialidade:" << specialty << endl << endl;
+	//cout << "Especialidade:" << specialty << endl << endl;
 }
