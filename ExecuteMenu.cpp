@@ -10,9 +10,9 @@ void ExecuteMenu::executeMenu() {
 
     case '1':
         try{
-            system("color 2F");
+            system("color 3F");
             doc.getDoctorData();
-            p[0]->vPrintData();
+            p[0]->vPrintData(0);
             printSuccessMessage();
         }
         catch (const std::exception&){
@@ -25,7 +25,7 @@ void ExecuteMenu::executeMenu() {
             system("color 3F");
             pacient.makeUserRegistration();
             pacient.getPacientPain();
-            p[1]->vPrintData();
+            p[1]->vPrintData(0);
             printSuccessMessage();
         }
         catch (const std::exception&){
@@ -37,8 +37,11 @@ void ExecuteMenu::executeMenu() {
         
         system("color 8F");
         appointment.makeAnAppointment();
+        appointment.printHeaderAppointment();
+        p[0]->vPrintData(1);
+        p[1]->vPrintData(1);
         appointment.printAppointment();
-        printSuccessMessage();        
+        printSuccessMessage();
         break;
 
     case '4':

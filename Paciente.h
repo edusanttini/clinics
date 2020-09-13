@@ -11,7 +11,7 @@ public:
     Paciente();
     Paciente(string);
     void makeUserRegistration();
-    void vPrintData();
+    void vPrintData(int);
     int getDesiredSpecialty();
     void getPacientPain();
 };

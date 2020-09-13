@@ -19,10 +19,10 @@ string Doutor::getCrm() {
     return crm;
 }
 
-void Doutor::vPrintData(){
+void Doutor::vPrintData(int isFullData){
     cout << "----------------------------------------" << endl;
     cout << "Dados do Medico:";
-	Pessoa::putData();
+	isFullData == 0 ? Pessoa::putData() : Pessoa::putName();
 	cout << "Crm: " << crm << "\n";
 	cout << "Especialidade:" << specialty << endl << endl;
 }

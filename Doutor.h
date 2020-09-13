@@ -9,6 +9,6 @@ public:
     void getDoctorData();
     //void printDoctorData();
     string getCrm();
-    void vPrintData();
+    void vPrintData(int);
 };
 

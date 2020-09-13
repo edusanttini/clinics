@@ -26,7 +26,10 @@ string Pessoa::getName() {
 	return name;
 }
 
-void Pessoa::vPrintData(){
+void Pessoa::putName() {
+    cout << "\nNome: " << name << endl;
+}
+void Pessoa::vPrintData(int x){
 	//cout << "---------OVERrIDE NOToKAY--------";
 };
 

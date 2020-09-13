@@ -15,12 +15,12 @@ void Paciente::makeUserRegistration() {
     getline(cin, cpf);
 }
 
-void Paciente::vPrintData(){
+void Paciente::vPrintData(int isFullData){
     cout << "----------------------------------------" << endl;
     cout << "Dados do Paciente:";
-	Pessoa::putData();
+	isFullData == 0 ? Pessoa::putData() : Pessoa::putName();
 	cout << "CPF:" << cpf << endl;
-	cout << "Especialidade: ";
+	cout << "Profissional escolhido: ";
 	switch (desiredSpecialty){
 	case '1': cout << "Alergista\n";	break;
 	case '2': cout << "Dentista\n";		break;

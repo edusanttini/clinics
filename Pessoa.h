@@ -17,5 +17,6 @@ public:
 	void getData();
 	void putData();
 	string getName();
-	virtual void vPrintData() = 0;
+	virtual void vPrintData(int x) = 0;
+	void putName();
 };
