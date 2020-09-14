@@ -1,7 +1,7 @@
 #include "Paciente.h"
 
 Paciente::Paciente() {
-	//Pessoa::getCustomerData();
+
 }
 
 Paciente::Paciente(string injury) {
@@ -26,7 +26,7 @@ void Paciente::vPrintData(int isFullData){
 	case '2': cout << "Dentista\n";		break;
 	case '3': cout << "Pediatra\n";		break;
 	case '4': cout << "Dermatologista\n"; break;
-	default : cout << "Opcao invalida\n"; break;
+	default : cout << "Opcao invalida, cadastre novamente o paciente\n"; break;
 	}
 	cout << "Sintoma relatado: " << injuryType << endl << endl;
 }
@@ -38,7 +38,7 @@ int Paciente::getDesiredSpecialty() {
 void Paciente::getPacientPain() {
 	system("CLS");
 	cout << "\t\t------- Sintomas -------\n";
-	cout << "A Clinics possui doutores especializados nas seguintes areas: \n";
+	cout << "A DocSystem possui doutores especializados nas seguintes areas: \n";
 	cout << "\nAlergista\tDentista\tPediatra\tDermatologista\n\n";
 	cout << "Digite 1 para marcar com um Alergista\n"
 			"Digite 2 para marcar com um Dentista\n"

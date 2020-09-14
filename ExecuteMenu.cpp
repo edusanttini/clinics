@@ -9,32 +9,26 @@ void ExecuteMenu::executeMenu() {
     switch (Menu::option) {
 
     case '1':
-        try{
+
             system("color 3F");
             doc.getDoctorData();
             p[0]->vPrintData(0);
             printSuccessMessage();
-        }
-        catch (const std::exception&){
-            throw new exception("Fail: ExecuteMenu::executeMenu('1')");
-        }        
+
         break;
 
     case '2':
-        try{
+
             system("color 3F");
             pacient.makeUserRegistration();
             pacient.getPacientPain();
             p[1]->vPrintData(0);
             printSuccessMessage();
-        }
-        catch (const std::exception&){
-            throw new exception("Fail: ExecuteMenu::executeMenu('2')");
-        }        
+
         break;
 
     case '3':
-        
+
         system("color 8F");
         appointment.makeAnAppointment();
         appointment.printHeaderAppointment();
@@ -46,7 +40,7 @@ void ExecuteMenu::executeMenu() {
 
     case '4':
         system("color 8F");
-        boleto.getdata();        
+        boleto.getdata();
         setPriceDueToConsult();
         boleto = consulta + boleto;
         boleto = consulta - boleto;

@@ -3,7 +3,6 @@
 
 void Appointment::makeAnAppointment() {
 	system("cls");
-	//Pessoa::getName();
 	cin.ignore();
 	cout << "\n\t\t----- Bem vinda ao sistema de agendamento -----\n\n";
 	fflush(stdin);
@@ -18,10 +17,10 @@ void Appointment::printHeaderAppointment() {
 	cout << "----------------------------------------" << endl;
 	cout << "\tDados do agendamento: " << endl;
 }
-void Appointment::printAppointment() {	
+void Appointment::printAppointment() {
 	cout << "----------------------------------------\n\n" << endl;
 	cout << "Sua consulta esta marcada para o dia " << date;
 	cout << " as " << clock << "\n\n";
-	cout << "Clinics agradece pela sua escolha!";
+	cout << "DocSystem agradece pela sua escolha!";
 	cout << "\n\n----------------------------------------\n";
 }

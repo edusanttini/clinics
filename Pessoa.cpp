@@ -30,7 +30,7 @@ void Pessoa::putName() {
     cout << "\nNome: " << name << endl;
 }
 void Pessoa::vPrintData(int x){
-	//cout << "---------OVERrIDE NOToKAY--------";
+
 };
 
 void Pessoa::putData() {

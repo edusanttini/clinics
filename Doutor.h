@@ -7,8 +7,6 @@ private:
 public:
     Doutor();
     void getDoctorData();
-    //void printDoctorData();
-    string getCrm();
     void vPrintData(int);
 };
 
