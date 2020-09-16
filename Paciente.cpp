@@ -1,8 +1,6 @@
 #include "Paciente.h"
 
-Paciente::Paciente() {
-
-}
+Paciente::Paciente() {}
 
 Paciente::Paciente(string injury) {
 	this->injuryType = injury;

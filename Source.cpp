@@ -1,10 +1,10 @@
 #include <iostream>
 #include "ExecuteMenu.h"
 
-int main() {
-
-	logo();
+int main() {	
 	ExecuteMenu menuController;
+	menuController.logo();
+
 	do {
 		do {
 			menuController.printMenu();

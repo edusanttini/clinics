@@ -5,7 +5,6 @@
 #include "Boleto.h"
 #include "Appointment.h"
 
-
 using namespace std;
 
 class Menu{
@@ -24,10 +23,9 @@ public:
 	bool isInputCorrect();
 	char getOption();
 	void test();
+	void logo();
 	void printSuccessMessage();
 	int getSpecialty();
-	void setPriceDueToConsult();
+	void setPriceDueToConsult();	
+	void calcExamPrice();
 };
-
-void logo();
-

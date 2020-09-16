@@ -1,9 +1,7 @@
 #include "Pessoa.h"
 using namespace std;
 
-Pessoa::Pessoa() {
-
-}
+Pessoa::Pessoa() {}
 
 void Pessoa::getData() {
     cin.ignore();
@@ -29,6 +27,7 @@ string Pessoa::getName() {
 void Pessoa::putName() {
     cout << "\nNome: " << name << endl;
 }
+
 void Pessoa::vPrintData(int x){
 
 };

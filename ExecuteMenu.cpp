@@ -7,28 +7,22 @@ void ExecuteMenu::executeMenu() {
     p[1] = &pacient;
 
     switch (Menu::option) {
-
     case '1':
-
-            system("color 3F");
-            doc.getDoctorData();
-            p[0]->vPrintData(0);
-            printSuccessMessage();
-
+        system("color 3F");
+        doc.getDoctorData();
+        p[0]->vPrintData(0);
+        printSuccessMessage();
         break;
 
     case '2':
-
-            system("color 3F");
-            pacient.makeUserRegistration();
-            pacient.getPacientPain();
-            p[1]->vPrintData(0);
-            printSuccessMessage();
-
+        system("color 3F");
+        pacient.makeUserRegistration();
+        pacient.getPacientPain();
+        p[1]->vPrintData(0);
+        printSuccessMessage();
         break;
 
     case '3':
-
         system("color 8F");
         appointment.makeAnAppointment();
         appointment.printHeaderAppointment();
@@ -42,9 +36,7 @@ void ExecuteMenu::executeMenu() {
         system("color 8F");
         boleto.getdata();
         setPriceDueToConsult();
-        boleto = consulta + boleto;
-        boleto = consulta - boleto;
-        boleto = consulta / boleto;
+        calcExamPrice();
         boleto.putdata(boleto);
         printSuccessMessage();
         cin.ignore();

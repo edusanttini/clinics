@@ -17,7 +17,6 @@ public:
 	void getdata();
 	void putdata(Boleto);
 	void setPrice(int);
-
 	Boleto operator + (Boleto);
 	Boleto operator - (Boleto);
 	Boleto operator / (Boleto);

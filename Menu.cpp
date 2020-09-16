@@ -2,9 +2,7 @@
 #include <conio.h>
 #include <string.h>
 
-Menu::Menu() {
-
-}
+Menu::Menu() {}
 
 void Menu::test() {
     cout << "not okay";
@@ -34,11 +32,9 @@ void Menu::printMenu() {
         "Tecle ! para sair\n";
     cout << "------------------------ DOCSYSTEM ------------------------\n";
     cin >> option;
-
 }
 
-void logo() {
-
+void Menu::logo() {
     cout << "\n------------------------------->>>>>  ///    BEM-VINDA AO DOCSYSTEM   ///   <<<<<------------------------------------\n\n\n"
          << "\n   %%%%%%%      %%%%%%%%%   %%%%%%%%%    %%%%%%%%    %%    %%    %%%%%%%%   %%%%%%%%%%  %%%%%%%%%   %%%%%%%%%%%"
          << "\n   %%     %%    %%     %%   %%           %%          %%    %%    %%             %%      %%          %%   %%  %%"
@@ -48,7 +44,6 @@ void logo() {
          << "\n   %%     %%    %%     %%   %%                 %%          %%          %%       %%      %%          %%   %%  %%"
          << "\n   %%%%%%%      %%%%%%%%%   %%%%%%%%%    %%%%%%%%    %%%%%%%%    %%%%%%%%       %%      %%%%%%%%%   %%   %%  %%"
          << endl << endl;
-
     cout << "\nPressione qualquer tecla para continuar..." << endl;
     cin.ignore();
     system("CLS");
@@ -73,4 +68,10 @@ void Menu::setPriceDueToConsult() {
     default : cout << "\nFavor digitar"
             " um numero valido!\n"; break;
     }
+}
+
+void Menu::calcExamPrice() {
+    boleto = consulta + boleto;
+    boleto = consulta - boleto;
+    boleto = consulta / boleto;
 }

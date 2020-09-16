@@ -5,7 +5,8 @@
 #include "Paciente.h"
 #include "Doutor.h"
 
-class Appointment : public Doutor, public Paciente {
+class Appointment :
+    public Doutor, public Paciente {
 
 private:
     string date;

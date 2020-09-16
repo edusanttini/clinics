@@ -1,6 +1,5 @@
 #include "Appointment.h"
 
-
 void Appointment::makeAnAppointment() {
 	system("cls");
 	cin.ignore();
@@ -17,6 +16,7 @@ void Appointment::printHeaderAppointment() {
 	cout << "----------------------------------------" << endl;
 	cout << "\tDados do agendamento: " << endl;
 }
+
 void Appointment::printAppointment() {
 	cout << "----------------------------------------\n\n" << endl;
 	cout << "Sua consulta esta marcada para o dia " << date;

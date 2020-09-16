@@ -1,5 +1,6 @@
 #pragma once
 #include "Pessoa.h"
+
 class Doutor :
     public Pessoa{
 private:

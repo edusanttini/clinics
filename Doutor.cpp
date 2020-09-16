@@ -1,8 +1,6 @@
 #include "Doutor.h"
 
-Doutor::Doutor() {
-
-    }
+Doutor::Doutor() {}
 
 void Doutor::getDoctorData() {
 	cout << "----- Digite os dados do Medico -----\n";
